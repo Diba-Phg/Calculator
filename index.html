@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diba phg - Calculator</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <!--PROGRAM START-->
+    <div class="calculator">
+      <!--NUMBER DISPLAYER-->
+      <div class="top">
+        <div class="display">
+          <input
+            type="text"
+            class="display"
+            placeholder="0"
+            id="display"
+            readonly
+          />
+        </div>
+      </div>
+      <div class="main">
+        <!--NUM PAD-->
+        <div class="numbers">
+          <button onclick="calculate(1)">1</button>
+          <button onclick="calculate(2)">2</button>
+          <button onclick="calculate(3)">3</button>
+          <button onclick="calculate(4)">4</button>
+          <button onclick="calculate(5)">5</button>
+          <button onclick="calculate(6)">6</button>
+          <button onclick="calculate(7)">7</button>
+          <button onclick="calculate(8)">8</button>
+          <button onclick="calculate(9)">9</button>
+          <button onclick="calculate(0)">0</button>
+          <button onclick="clearNum()">C</button>
+          <button onclick="result()">=</button>
+        </div>
+        <!--OPERATORS PAD-->
+        <div class="operators">
+          <button onclick="calculate('+')">+</button>
+          <button onclick="calculate('-')">-</button>
+          <button onclick="calculate('/')">/</button>
+          <button onclick="calculate('*')">*</button>
+        </div>
+      </div>
+    </div>
+    <!--END OF PROGRAM-->
+    <script src="./js/script.js"></script>
+  </body>
+</html>
